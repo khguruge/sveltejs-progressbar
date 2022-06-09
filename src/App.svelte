@@ -1,36 +1,20 @@
-<!-- <script>
+<script>
   import Progress from './lib/Progress.svelte'
 </script>
 
 <main>
   <Progress progress={40} color={'pink'}/>
-</main> -->
-<script>
-  export let progress = 50;
-  export let color = "blue";
-
-  if (progress > 100) {
-    progress = 100;
-  } else if (progress <= 0) {
-    progress = 0;
-  }
-</script>
-
-<main>
-  <div class="outer" style=" border: 1px solid {color};">
-    <div class="inner" style="width : {progress}%; background : {color}" />
-  </div>
 </main>
 
 <style>
-  .inner,
-  .outer {
-    height: 40px;
-    border-radius: 30px;
+  :root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-  .outer {
-    width: 100%;
-    background: transparent;
+  main {
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
   }
 </style>
