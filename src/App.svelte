@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  <Progress />
+  <Progress progress={40} color={'pink'}/>
 </main>
 
 <style>
