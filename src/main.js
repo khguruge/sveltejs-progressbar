@@ -1,8 +1,8 @@
 // import App from './App.svelte'
 import Progress from './lib/Progress.svelte'
 
-const app = new Progress({
-  target: document.getElementById('app')
+const progressbar = new Progress({
+  target: document.getElementById('progressbar')
 })
 
-export default app
+export default progressbar
