@@ -16,7 +16,7 @@ npm i sveltejs-progressbar
 
  Put this in your html 
  
-```sh
+```html
   <Progress/>
 ```
 
@@ -31,6 +31,6 @@ sveltejs-progressbar support for these options
 
  Example:
  
-```sh
+```html
    <Progress progress={50} color={'blue'}/>
 ```
